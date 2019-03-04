@@ -1,3 +1,11 @@
+
+.container {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
 .App {
   text-align: center;
 }
@@ -27,7 +35,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #f47735;
 }
 
 li {
@@ -43,11 +51,11 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #07d307;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #333;
 }
 
 
@@ -56,7 +64,7 @@ li a:hover:not(.active) {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 500px;
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -92,7 +100,18 @@ button:hover, a:hover {
 
 
 
-
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  /*background-image: url('searchicon.png');*/
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
 
 
 @keyframes App-logo-spin {
