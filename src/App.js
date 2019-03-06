@@ -5,7 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home';
 import Teams from './components/Teams';
-import Users from './components/Users';
+import Users from './components/page/Users';
 import About from './components/About';
 import Userform from './components/page/Userform';
 
