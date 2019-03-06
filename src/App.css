@@ -59,10 +59,6 @@ li a:hover:not(.active) {
   background-color: #333;
 }
 
-
-
-
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 500px;
@@ -100,7 +96,6 @@ button:hover, a:hover {
 }
 
 
-
 input[type=text] {
   width: 100%;
   box-sizing: border-box;
@@ -116,7 +111,7 @@ input[type=text] {
 
 @media (max-width: 768px) { 
   .container {
-    font-size: 8px
+    font-size: 14px
   }
 }
 
