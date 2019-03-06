@@ -23,8 +23,7 @@ class Teams extends Component {
                     const {user_list} = value;
 
                     let filteredUsers = user_list.filter((item) => {
-                        //return item.name.toLowerCase().indexOf(this.state.userFilter) !==-1;
-                        if(item.name.toLowerCase().indexOf(this.state.userFilter) !==-1 || item.username.toLowerCase().indexOf(this.state.userFilter) !==-1)
+                        if(item.name.toLowerCase().indexOf(this.state.userFilter) !==-1 || item.username.toLowerCase().indexOf(this.state.userFilter) !==-1 || item.email.toLowerCase().indexOf(this.state.userFilter) !==-1 )
                             return true
                     }
                     );

@@ -1,9 +1,11 @@
 
 .container {
+  text-align:justify;
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 75px;
   margin-bottom: 50px;
+  font-size: 24px;
 }
 
 .App {
@@ -35,7 +37,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f47735;
+  background-color:orange;
 }
 
 li {
@@ -46,7 +48,6 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -107,12 +108,17 @@ input[type=text] {
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  /*background-image: url('searchicon.png');*/
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
 }
 
+
+@media (max-width: 768px) { 
+  .container {
+    font-size: 8px
+  }
+}
 
 @keyframes App-logo-spin {
   from {
