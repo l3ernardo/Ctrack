@@ -1,6 +1,7 @@
 import React from 'react'
 
-function About() {
+function About(props) {
+  console.log("about props : " , props);
   return (
     <React.Fragment>
       <i className="fa fa-bars"></i>
