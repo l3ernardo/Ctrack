@@ -9,11 +9,11 @@ class Teams extends Component {
         super();
         this.state = {
             userFilter: ''
-          }
+          } 
     }
 
-    updateSearch(e) {
-        this.setState({[e.target.name]: e.target.value.toLowerCase().substr(0,30)});
+    updateSearch = (e) => {
+        this.setState({[e.target.name]: e.target.value.toLowerCase()});
     }
 
     render() {
@@ -23,7 +23,8 @@ class Teams extends Component {
                     const {user_list} = value;
 
                     let filteredUsers = user_list.filter((item) => {
-                        if(item.name.toLowerCase().indexOf(this.state.userFilter) !==-1 || item.username.toLowerCase().indexOf(this.state.userFilter) !==-1 || item.email.toLowerCase().indexOf(this.state.userFilter) !==-1 )
+                        
+                        if(item.name.toLowerCase().includes(this.state.userFilter) || item.username.toLowerCase().includes(this.state.userFilter) || item.email.toLowerCase().includes(this.state.userFilter))
                             return true
                     }
                     );
@@ -43,7 +44,7 @@ class Teams extends Component {
                                         name="userFilter" 
                                         placeholder="Search.."
                                         value={this.state.userFilter}
-                                        onChange={this.updateSearch.bind(this)}
+                                       onChange={this.updateSearch}
                                     />
 
                                         {filteredUsers.map(item => (

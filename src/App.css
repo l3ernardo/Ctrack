@@ -18,6 +18,11 @@
   pointer-events: none;
 }
 
+:focus {
+  background-color: pink;
+}
+
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -89,7 +94,7 @@ button:hover, a:hover {
 }
 
 
-input[type=text] {
+input {
   width: 100%;
   box-sizing: border-box;
   border: 2px solid #ccc;

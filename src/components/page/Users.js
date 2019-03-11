@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Users.css';
 
-const Users = (props) => {
+const Users = props => {
   return (
     <div className="card">
         <h2>{props.content.name}</h2>
