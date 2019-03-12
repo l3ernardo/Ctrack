@@ -25,13 +25,18 @@ class App extends Component {
       return {sideDrawerOpen: !prevState.sideDrawerOpen};
     })
   }
+
+  closeToggleClickHandler = () => {
+    this.setState({sideDrawerOpen: false});
+  };
+
   render() {
     return (
       <Provider>
       <Router>
         <React.Fragment>
           <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
-          <Drawer  show={this.state.sideDrawerOpen}/>
+          <Drawer  show={this.state.sideDrawerOpen} close={this.closeToggleClickHandler}/>
           <div className="container">
             <Switch>
                 <Route exact path="/" component={Home} />
@@ -52,9 +57,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-// General stuff overview about what I´m inputing and why:
-
-// I substitute single div tag required and using React.Fragment as best practice;

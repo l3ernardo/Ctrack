@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import {Map, GoogleApiWrapper} from 'google-maps-react';
  
 class CarMap extends Component {
 
@@ -9,7 +9,7 @@ class CarMap extends Component {
   }
 
    render() {
-    console.log("this.props : ", this.props.content);
+
     const style = {
       width: '80%',
       height: '80%'
@@ -36,6 +36,8 @@ export default GoogleApiWrapper({
 
 
 /*
+
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
       <Map       
         google={this.props.google}

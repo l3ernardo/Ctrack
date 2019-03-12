@@ -26,8 +26,7 @@ class Teams extends Component {
                         
                         if(item.name.toLowerCase().includes(this.state.userFilter) || item.username.toLowerCase().includes(this.state.userFilter) || item.email.toLowerCase().includes(this.state.userFilter))
                             return true
-                    }
-                    );
+                    });
                     
                     if(user_list === undefined || user_list.length === 0 ){
 

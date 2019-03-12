@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Maps from './CarMap'
+
 import axios from 'axios';
 
 class Userform extends Component {
@@ -19,17 +20,18 @@ class Userform extends Component {
 
   render() {
 
+
     const user = this.state.user ? (
       <div className="post">
-        <h4>{this.state.user.name}</h4>
-        <h4>{this.state.user.username}</h4>
-        <h4>{this.state.user.phone}</h4>
-        <h4>{this.state.user.website}</h4>
-        <h4>{this.state.user.address.street}</h4>
-        <h4>{this.state.user.address.suite}</h4>
-        <h4>{this.state.user.address.geo.lat}</h4>
+        <i className="fa fa-user"></i> {this.state.user.name} <br/>
+        <i className="fa fa-envelope"></i> {this.state.user.email} <br/>
+        <i className="fa fa-phone"></i> {this.state.user.phone} <br/>
+        <i className="fa fa-map-marker"></i> {this.state.user.address.city} <br/>
+        <i className="fa fa-building"></i> {this.state.user.company.name} <br/>
+        <i className="fa fa-globe"></i> {this.state.user.address.geo.lat} - {this.state.user.address.geo.lng}
 
         <Maps content={this.state.user.address.geo}/>
+
       </div>
     ) : (
       <div className="center">Loading...</div>

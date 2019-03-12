@@ -106,10 +106,16 @@ input {
   padding: 12px 20px 12px 40px;
 }
 
+/* Userform  user detail */
+.fa {
+  width: 30px;
+  margin-bottom:5px;
+}
+
 
 @media (max-width: 768px) { 
   .container {
-    font-size: 14px
+    font-size: 12px
   }
 }
 
