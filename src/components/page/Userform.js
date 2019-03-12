@@ -19,8 +19,6 @@ class Userform extends Component {
   }
 
   render() {
-
-
     const user = this.state.user ? (
       <div className="post">
         <i className="fa fa-user"></i> {this.state.user.name} <br/>

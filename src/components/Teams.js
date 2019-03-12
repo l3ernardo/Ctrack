@@ -34,24 +34,24 @@ class Teams extends Component {
 
                     } else {
                         console.log("user_list : ", user_list);
-                            return (
-                                <React.Fragment>
-                                    <div className="card">
+                        return (
+                            <React.Fragment>
+                                <div className="card">
 
-                                    <input 
-                                        type="text" 
-                                        name="userFilter" 
-                                        placeholder="Search.."
-                                        value={this.state.userFilter}
-                                       onChange={this.updateSearch}
-                                    />
+                                <input 
+                                    type="text" 
+                                    name="userFilter" 
+                                    placeholder="Search.."
+                                    value={this.state.userFilter}
+                                    onChange={this.updateSearch}
+                                />
 
-                                        {filteredUsers.map(item => (
-                                            <Users key={item.id} content={item}/>
-                                        ))}
-                                    </div>
-                                </React.Fragment>
-                            )
+                                    {filteredUsers.map(item => (
+                                        <Users key={item.id} content={item}/>
+                                    ))}
+                                </div>
+                            </React.Fragment>
+                        )
                     }
     
                 }}

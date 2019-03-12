@@ -4,12 +4,22 @@ import {Map, GoogleApiWrapper} from 'google-maps-react';
 class CarMap extends Component {
 
   state = {
-    lat:this.props.content.lat,
-    lng:this.props.content.lng
+    lat:null,
+    lng:null
   }
 
-   render() {
+  componentDidMount() {
 
+    let latitude = this.props.content.lat;
+    let longitude = this.props.content.lng;
+
+    this.setState({
+      lat:latitude,
+      lng:longitude
+    })
+  } 
+
+  render() {
     const style = {
       width: '80%',
       height: '80%'
@@ -23,7 +33,7 @@ class CarMap extends Component {
           lat: this.state.lat,
           lng: this.state.lng
         }}
-        zoom={15}>
+        zoom={5}>
       </Map>
       </div>
     );
@@ -36,18 +46,6 @@ export default GoogleApiWrapper({
 
 
 /*
-
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-
-      <Map       
-        google={this.props.google}
-        style={style}
-        initialCenter={{
-          lat: 38.6206,
-          lng: -9.1954
-        }}
-        zoom={15}>
-      </Map>
-
 
  */     
