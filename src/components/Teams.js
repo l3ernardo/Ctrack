@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Users from './page/Users'
+import Users from './Page/Users'
 
 import { Consumer } from '../context';
 

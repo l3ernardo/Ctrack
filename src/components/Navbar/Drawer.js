@@ -3,16 +3,17 @@ import './Drawer.css'
 
 import { Link } from 'react-router-dom'
 
-
 const Drawer = props => {
 
 console.log("props : " , props);
-//<Link onClick={this.handleClick.bind(this)} />
 console.log("Drawer props : ", props);
+
     let drawerClasses = 'side-drawer';
-    if (props.show){
+
+    if (props.show) {
         drawerClasses= 'side-drawer open';
     }
+
   return (
     <nav className={drawerClasses}>
         <ul>       
@@ -20,7 +21,7 @@ console.log("Drawer props : ", props);
             <Link to="/" onClick={props.close}> Home </Link>
           </li>
           <li>
-              <Link to="/teams" onClick={props.close}> Team </Link>
+            <Link to="/teams" onClick={props.close}> Team </Link>
           </li>
         </ul>
     </nav>

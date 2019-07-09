@@ -45,15 +45,3 @@ class Userform extends Component {
 }
 
 export default Userform;
-
-/*
-
-      axios.get(`https://jsonplaceholder.typicode.com/users`)
-      .then(res=> {
-        //console.log(res.data)
-        this.setState({users:res.data});
-      })
-      .catch(err => console.log(err));
-
-
-*/
