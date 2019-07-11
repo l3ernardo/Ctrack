@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import './App.css';
-import Drawer from './components/Navbar/Drawer';
-import Navbar from './components/Navbar/Navbar';
+import Drawer from './components/layout/Drawer';
+import Navbar from './components/layout/Navbar';
 import Home from './components/Home';
 import Teams from './components/Teams';
-import Users from './components/Page/Users';
+import Users from './components/page/Users';
 import About from './components/About';
-import Userform from './components/Page/Userform';
+import Userform from './components/page/Userform';
 
 
 

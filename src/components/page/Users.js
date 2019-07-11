@@ -11,7 +11,7 @@ const Users = props => {
         <p><b>Phone :</b> {props.content.phone}</p>
         <p><b>E-mail :</b>{props.content.email}</p>
         <p><b>Website :</b> {props.content.website}</p>
-        <Link to={`Page/userform/${props.content.id}`}><button>Contact</button></Link>
+        <Link to={`page/userform/${props.content.id}`}><button>Contact</button></Link>
     </div>
   );
 }
